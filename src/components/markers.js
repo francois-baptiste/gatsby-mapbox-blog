@@ -1,11 +1,11 @@
 import React, { useRef, useEffect } from "react"
-import mapboxgl from "mapbox-gl"
+import maplibregl from "maplibre-gl"
 
 const Marker = ({ map, place }) => {
   const markerRef = useRef()
 
   useEffect(() => {
-    const marker = new mapboxgl.Marker(markerRef)
+    const marker = new maplibregl.Marker(markerRef)
       .setLngLat([place.longitude, place.latitude])
       .addTo(map)
 

@@ -14,8 +14,8 @@ This is a bare minimum structure that uses Gatsbyjs + Mapbox GL JS + React hooks
 - Seamless transition animation between blog posts because the Map component only loads once.
 
 Read my process on:  
-https://erraticgenerator.com/blog/gatsby-blog-with-mapbox-gl-js-using-react-hooks
+https://erraticgenerator.com/blog/gatsby-blog-with-maplibre-gl-js-using-react-hooks
 
 Or on Medium:  
-https://erraticgenerator.medium.com/gatsby-blog-with-mapbox-gl-js-using-react-hooks-694b8a846310
+https://erraticgenerator.medium.com/gatsby-blog-with-maplibre-gl-js-using-react-hooks-694b8a846310
 

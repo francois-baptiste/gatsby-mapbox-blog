@@ -1,9 +1,9 @@
 import React, { useRef, useEffect, useState } from "react"
-import mapboxgl from "mapbox-gl"
+import maplibregl from "maplibre-gl"
 import bbox from "@turf/bbox"
 import { multiPoint } from "@turf/helpers"
 import Markers from "./markers"
-import "mapbox-gl/dist/mapbox-gl.css"
+import "maplibre-gl/dist/maplibre-gl.css"
 
 // replace with your own Mapbox token
 const MAPBOX_TOKEN = process.env.GATSBY_MAPBOX_TOKEN
@@ -19,7 +19,7 @@ const Map = props => {
   const [map, setMap] = useState(null)
 
   useEffect(() => {
-    const map = new mapboxgl.Map({
+    const map = new maplibregl.Map({
       container: mapContainerRef.current,
       accessToken: MAPBOX_TOKEN,
       style: "mapbox://styles/mapbox/streets-v11",
@@ -28,7 +28,7 @@ const Map = props => {
       zoom: 10,
     })
 
-    map.addControl(new mapboxgl.NavigationControl(), "top-right")
+    map.addControl(new maplibregl.NavigationControl(), "top-right")
 
     setMap(map)
 

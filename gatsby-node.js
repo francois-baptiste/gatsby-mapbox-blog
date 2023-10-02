@@ -39,14 +39,3 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 }
-
-// issue when deploying Mapbos GL JS
-// https://github.com/mapbox/mapbox-gl-js/issues/4359
-
-// exports.onCreateWebpackConfig = ({ actions }) => {
-//   actions.setWebpackConfig({
-//     module: {
-//       noParse: /(mapbox-gl)\.js$/,
-//     },
-//   })
-// }
